@@ -1,0 +1,42 @@
+$breakpoints: (
+  "sm": 0,
+  "lg": 920px,
+);
+
+@mixin sm {
+  @media (min-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+@include sm {
+  .card {
+    position: absolute;
+  }
+}
+@include lg {
+  .card {
+    width: 1110px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: -100px;
+  }
+  .heading-text-container {
+    text-align: left;
+  }
+  .heading-text-container:nth-child(-n + 3) p::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(201, 200, 200);
+    width: 1px;
+    height: 80%;
+    top: 7px;
+    bottom: 3px;
+    margin-left: 4%;
+  }
+}

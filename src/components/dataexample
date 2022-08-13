@@ -1,0 +1,19 @@
+{ip: '192.212.174.101', location: {…}, as: {…}, isp: 'Southern California Edison'}
+as:
+asn: 7127
+domain: ""
+name: "SCE"
+route: "192.212.0.0/15"
+type: ""
+[[Prototype]]: Object
+ip: "192.212.174.101"
+isp: "Southern California Edison"
+location:
+  city: "South San Gabriel"
+  country: "US"
+  geonameId: 5397771
+  lat: 34.04915
+  lng: -118.09462
+  postalCode: ""
+  region: "California"
+  timezone: "-07:00"

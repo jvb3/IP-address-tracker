@@ -1,0 +1,180 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+.search-bar {
+  min-width: 375px;
+}
+.search-bar__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 45px;
+}
+.search-bar__bg-image {
+  background-image: url("../images/pattern-bg.png");
+  background-repeat: none;
+  background-position: 50%;
+  background-size: cover;
+  padding-bottom: 175px;
+  padding-top: 150px;
+  width: 100vw;
+}
+.search-bar__input {
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  height: 45px;
+  outline: none;
+  width: 275px;
+}
+.search-bar__input:hover {
+  cursor: pointer;
+}
+.search-bar__box {
+  align-items: center;
+  background-color: white;
+  background: linear-gradient(to right, white 80%, black 20%);
+  border-radius: 10px;
+  display: flex;
+  height: 55px;
+  left: 50%;
+  padding-left: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 375px;
+}
+.search-bar__arrow-icon {
+  padding-left: 45px;
+}
+.search-bar__arrow-icon:hover {
+  cursor: pointer;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+  min-width: 375px;
+  justify-content: center;
+  z-index: 500;
+}
+.card__heading {
+  color: hsl(0deg, 0%, 59%);
+  font-family: Rubik;
+  font-size: 10px;
+  font-weight: 700;
+  padding-top: 16px;
+}
+.card__text {
+  color: hsl(0deg, 0%, 17%);
+  font-family: Rubik;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.heading-text-container {
+  text-align: center;
+}
+
+.leaflet-container {
+  height: 550px;
+  width: 100vw;
+}
+
+@media (min-width: 0) {
+  .card {
+    position: absolute;
+  }
+}
+@media (min-width: 920px) {
+  .card {
+    width: 1110px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: -100px;
+  }
+  .heading-text-container {
+    text-align: left;
+  }
+  .heading-text-container:nth-child(-n+3) p::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(201, 200, 200);
+    width: 1px;
+    height: 80%;
+    top: 7px;
+    bottom: 3px;
+    margin-left: 4%;
+  }
+}
+.error-msg {
+  color: rgb(247, 169, 169);
+  margin-top: -150px;
+  font-weight: 700;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */

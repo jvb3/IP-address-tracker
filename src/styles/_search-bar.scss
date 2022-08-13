@@ -1,0 +1,52 @@
+.search-bar {
+  min-width: 375px;
+
+  &__title {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 45px;
+  }
+
+  &__bg-image {
+    background-image: url("../images/pattern-bg.png");
+    background-repeat: none;
+    background-position: 50%;
+    background-size: cover;
+    padding-bottom: 175px;
+    padding-top: 150px;
+    width: 100vw;
+  }
+  &__input {
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    height: 45px;
+    outline: none;
+    width: 275px;
+  }
+  &__input:hover {
+    cursor: pointer;
+  }
+  &__box {
+    align-items: center;
+    background-color: white;
+    background: linear-gradient(to right, white 80%, black 20%);
+    border-radius: 10px;
+    display: flex;
+    height: 55px;
+    left: 50%;
+    padding-left: 10px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 375px;
+  }
+  &__arrow-icon {
+    padding-left: 45px;
+  }
+  &__arrow-icon:hover {
+    cursor: pointer;
+  }
+}
