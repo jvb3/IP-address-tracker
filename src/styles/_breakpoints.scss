@@ -19,11 +19,14 @@ $breakpoints: (
   }
 }
 @include lg {
+  .ip-card-container {
+    min-width: 1110px;
+  }
   .card {
-    width: 1110px;
+    min-width: 80%;
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    position: relative;
     margin-top: -100px;
   }
   .heading-text-container {
@@ -37,6 +40,6 @@ $breakpoints: (
     height: 80%;
     top: 7px;
     bottom: 3px;
-    margin-left: 4%;
+    margin-left: 7%;
   }
 }

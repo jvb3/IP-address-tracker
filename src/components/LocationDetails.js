@@ -2,7 +2,7 @@ import React from "react";
 
 function LocationDetails({ ipData, errorMsg }) {
   return (
-    <div className="card-wrapper">
+    <>
       {errorMsg ? (
         <div className="error-msg">
           No information found. <br />
@@ -30,7 +30,7 @@ function LocationDetails({ ipData, errorMsg }) {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
 

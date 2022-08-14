@@ -1,19 +1,21 @@
-.card-wrapper {
+.ip-card-container {
+  min-width: 350px;
+  min-height: 300px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: -160px;
+  z-index: 500;
 }
 
 .card {
   align-items: center;
   background-color: white;
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
   padding-bottom: 16px;
-  min-width: 375px;
-  justify-content: center;
-  z-index: 500;
+  max-width: 350px;
+  width: 100%;
 
   &__heading {
     color: $gray;

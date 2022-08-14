@@ -33,10 +33,13 @@ function SearchBar({
           </form>
         </div>
 
-        <LocationDetails ipData={ipData} errorMsg={errorMsg} />
+        <div className="ip-card-container">
+          <LocationDetails ipData={ipData} errorMsg={errorMsg} />
+        </div>
+        <div className="map-container">
+          <OnMap ipData={ipData} coordinates={coordinates} zoom={zoom} />
+        </div>
       </div>
-
-      <OnMap ipData={ipData} coordinates={coordinates} zoom={zoom} />
     </div>
   );
 }

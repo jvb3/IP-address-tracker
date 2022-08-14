@@ -55,7 +55,10 @@ ol[role=list] {
 }
 
 .search-bar {
-  min-width: 375px;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .search-bar__title {
   font-family: "Rubik", sans-serif;
@@ -72,15 +75,22 @@ ol[role=list] {
   background-size: cover;
   padding-bottom: 175px;
   padding-top: 150px;
-  width: 100vw;
+  padding-left: 16px;
+  padding-right: 16px;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .search-bar__input {
   border-radius: 10px;
   border: none;
-  font-size: 18px;
+  font-size: 16px;
   height: 45px;
   outline: none;
-  width: 275px;
+  width: 75%;
+  padding-top: 10px;
 }
 .search-bar__input:hover {
   cursor: pointer;
@@ -90,37 +100,39 @@ ol[role=list] {
   background-color: white;
   background: linear-gradient(to right, white 80%, black 20%);
   border-radius: 10px;
-  display: flex;
   height: 55px;
-  left: 50%;
   padding-left: 10px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  width: 375px;
+  max-width: 350px;
+  width: 88%;
+  position: relative;
 }
 .search-bar__arrow-icon {
-  padding-left: 45px;
+  position: absolute;
+  top: 37%;
+  left: 88%;
 }
 .search-bar__arrow-icon:hover {
   cursor: pointer;
 }
 
-.card-wrapper {
+.ip-card-container {
+  min-width: 350px;
+  min-height: 300px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: -160px;
+  z-index: 500;
 }
 
 .card {
   align-items: center;
   background-color: white;
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
   padding-bottom: 16px;
-  min-width: 375px;
-  justify-content: center;
-  z-index: 500;
+  max-width: 350px;
+  width: 100%;
 }
 .card__heading {
   color: hsl(0deg, 0%, 59%);
@@ -141,8 +153,11 @@ ol[role=list] {
 }
 
 .leaflet-container {
-  height: 550px;
-  width: 100vw;
+  min-height: 550px;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: -140px;
 }
 
 @media (min-width: 0) {
@@ -151,11 +166,14 @@ ol[role=list] {
   }
 }
 @media (min-width: 920px) {
+  .ip-card-container {
+    min-width: 1110px;
+  }
   .card {
-    width: 1110px;
+    min-width: 80%;
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    position: relative;
     margin-top: -100px;
   }
   .heading-text-container {
@@ -169,7 +187,7 @@ ol[role=list] {
     height: 80%;
     top: 7px;
     bottom: 3px;
-    margin-left: 4%;
+    margin-left: 7%;
   }
 }
 .error-msg {
